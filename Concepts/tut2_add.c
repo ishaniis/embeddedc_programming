@@ -10,4 +10,5 @@ int main(){
      scanf("%d",b);
 
     return 0;
+   
 }
