@@ -1,4 +1,4 @@
-#include <stdio.h>
+//File Info in the C Programming
 
 // .c - source code of the file (Human Readable format)
 // .h =  Header file which posses pre-processor logic
@@ -10,5 +10,5 @@
 // .exe - Dynamic Linker (Stiches all of them together)
 // .a - Static Linker (It has everything it needs inside itself)
 
-// Static Linking - Library code is copied into your executable at compile time
-// Dynamic Linking - Library code is loaded into memory at run time 
+// \n: New Line
+// \t: tab
