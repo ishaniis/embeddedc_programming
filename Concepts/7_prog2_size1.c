@@ -2,9 +2,9 @@
 
 int main(){
 
-    printf("%lu",sizeof(int));
+    printf("%lu \n",sizeof(float));
     /*
-    %lu : Unsigned long 
+    %lu : Unsigned long  
     */
     return 0;
 
