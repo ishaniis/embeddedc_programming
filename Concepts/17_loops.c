@@ -55,7 +55,38 @@ Do-while loop:
 Syntax of While Loop:
 
 while(condition){
-    
+
 }
 
 */
+
+
+/*
+For loops: 
+- Used to iterate the statements or a part of program multiple times
+- Used to traverse the data structures (arrays, linked lists etc)
+*/
+
+/*
+
+Syntax of for loop
+for (size_t i = 0; i < count; i++)
+{
+   }
+
+
+for(expression1 ; expression 2; incremental expression)
+*/
+
+/*
+For more clarity: i++ -> i = i + 1
+*/
+
+/*
+Conditions for expressions in for loops
+- Expression 1: Optional, if the variable is already initialized - NO need to define the expression1 all again
+- Expression 2: Decides the flow of the loop, when to terminate the loop. 
+- - Expression2: i<5 , j<6 : Will execute but will follow the last condition until loop reaches that conditon
+- Expression 3: Use to update the loop variable (i), we can update more than 1 variable
+*/
+
