@@ -39,3 +39,10 @@ marks[100]
 marks[] = {90,100,95}
 marks[10][20] : Rows = 10, Columns = 20 
 */
+
+/*
+Disadvantages of using array:
+- Poor Time Complexity of insertion and deletion
+- Wastage of memory - Fixed in size
+- If memory is limited and contigous memory is not present, then we won't be able to initialize the array. 
+*/
