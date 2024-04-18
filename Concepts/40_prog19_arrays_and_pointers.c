@@ -33,6 +33,18 @@ int main(){
     // Can be said now:
     // *(&arr[1]) = arr[1] = *(arr + 1)
 
+    //Now one of the important concept is
+    /*
+    I can't do 
+    arr++ -> arr[0] address of a given array is constant
+    To do the same, I could make a pointer pointing to this array and perform the following operation
+
+    arr++; -> Will thow an error
+    int *ptr_array = arr;
+
+    ptr_array++; -> Will work
+    */
+
 
     return 0;
 
