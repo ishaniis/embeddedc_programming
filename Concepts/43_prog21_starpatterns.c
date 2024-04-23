@@ -12,15 +12,15 @@ Reverse triangular star pattern
 */
 
 #include <stdio.h>
-#include <math.h>
+// #include <math.h>
 
 int triangular_star_pattern(int n){
 
     int input_star = n;
 
-    for (int i =0; i < input_star + 1; i++)
+    for (int i =0; i < input_star; i++)
      {
-        for(int j = 0; j < i; j++){
+        for(int j = 0; j <= i; j++){
             printf(" * ");
         }
         printf("\n");
