@@ -23,8 +23,11 @@ void printStudentDatabase(struct  StudentDatabase x1)
     printf("Student's grade: %s \n", x1.grade);
 };
 
-int main(){
+//Struct Global Variables
+struct StudentDatabase g1;
 
+int main(){
+    // struct Local Variables
     struct StudentDatabase s1, s2, s3;
 
     //Reason for using this -> As char[20] -> is not assignable -> By this modification we are able to assign/copy the value.
