@@ -53,19 +53,20 @@ int html_parser_robust_func(char *arr){
     for(int i =0; i< length_of_string; i++){
 
         if (arr[i] == '<'){
-            in = 1;
-            continue;
-        }
-        else if (arr[i] == '>'){
             in = 0;
             continue;
         }
-    // Moment it observes the in is set to 0, after it observes the closing bracket, it'll set to index to that particular i location and increment with +1
-            if (in == 0){
+        else if (arr[i] == '>'){
+            in = 1;
+            continue;
+        }
+    // Moment it observes the in is set to 1, after it observes the closing bracket, it'll set to index to that particular i location and increment with +1
+            if (in == 1){
                 arr[index] = arr[i];
                 index++;
             }
     }
+    // Moment you get out of the text, set the last index to -? '/0 -> String terminator 
         arr[index] = '\0';
 
     //Now let's work towards getting rid of the white spaces in the middle and at the end of the phrase
