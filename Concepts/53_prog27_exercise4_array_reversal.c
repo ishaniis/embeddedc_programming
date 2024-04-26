@@ -33,5 +33,16 @@ int main(){
         printf("%d \t",testArr[i]);
     }
     printf("\n");
+
+    /*
+    Observed O/p:
+
+    Initial Array 
+    1       2       3       4       5       6 
+    
+    Array after reverse operation has been performed 
+    6       5       4       3       2       1 
+
+    */
     return 0;
 }
