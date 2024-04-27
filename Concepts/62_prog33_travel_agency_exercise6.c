@@ -25,7 +25,7 @@ Print all the details of all the details -> Create Structures
 
 typedef struct driver_db
 {
-    char drivers_name[20];
+    char drivers_name[100];
     int driver_license[20];
     char route_source[4];
     char route_destination[4];
@@ -36,7 +36,7 @@ typedef struct driver_db
 void driverdb_dev(int n){
 
     int number_of_drivers = n;
-    char drivers_name[20];
+    char drivers_name[100];
     char route_source[4];
     char route_destination[4];
 
@@ -72,7 +72,10 @@ void driverdb_dev(int n){
         printf("\n");
 
         printf("\n****************************************************************\n");
-        printf("**Driver Database**\n");
+        printf("***********************Driver Database**************************\n");
+        printf("****************************************************************\n");
+        printf("****************************************************************\n");
+        printf("Total Number of Drivers: %d\n", number_of_drivers);
         printf("****************************************************************\n");
         printf("Driver [%d] details:\n", i);
         printf("Driver's name: %s\n",s[i].drivers_name);
@@ -83,19 +86,29 @@ void driverdb_dev(int n){
         printf("****************************************************************\n");
 
     }
-
-    // printf("\n*****\n");
-    // printf("**Driver Database**\n");
-    // printf("Total number of Driver's in the database: %d \n", number_of_drivers);
-    //  printf("\n*****\n");
-    // for (int j =0; j < number_of_drivers; j++){
-    //     printf("Driver [%d] Details \n",j);
-    //     printf("Driver Name : %s", s[j].drivers_name)
-    // }
 }
 
 int main(){
 
     driverdb_dev(1);
     return 0;
+
+    /*
+    Output Produced:
+
+    ****************************************************************
+    ***********************Driver Database**************************
+    ****************************************************************
+    ****************************************************************
+    Total Number of Drivers: 1
+    ****************************************************************
+    Driver [0] details:
+    Driver's name: Ishan
+    Driver's License Number: 654321
+    Joruney Details: Source : ATL to Destination: PHI
+    Driver has driven by now: 650 miles. Miles left for the day: 345 miles 
+    ****************************************************************
+    ****************************************************************
+    
+    */
 }
